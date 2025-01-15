@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cart Page</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+           <div class="main-image">
+            <img src="./images/MARMETTO.png" alt="" width="50" height="">
+            <h2>Marmeto</h2>
+            </div>
+            <nav>
+                
+                <ul><li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+               
+            </nav>
+            <div class="icon-items">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+           
+        </header>
+
+<section class="home-image-container">
+    <div class="home-content">
+        <img src="./images/MARMETTO.png" alt="" width="50">
+        <h2>Cart</h2>
+        <br>
+        <p>Home <span><i class="fa-solid fa-chevron-right"></i></span> Cart</p>
+        </div>
+    </section>
+
+        <main>
+            <div class="cart-container">
+                <div class="cart-items">
+                   
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items-list"></tbody>
+                    </table>
+                </div>
+                <div class="cart-totals">
+                    <h3>Cart Totals</h3>
+                    <div class="totals">
+                        <p>Subtotal: <span id="subtotal"></span></p>
+                        <p>Total: <span id="total"></span></p>
+                        <button id="checkout-button">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!-- Footer  -->
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-first-img">
+                    <div class="img-container">
+                <img src="./images/trophy.png" alt="" width="30">
+                </div>
+                <div class="footer-content">
+                <h4>High Quality </h4>
+                <p>Crafted from top materials</p>
+                </div>
+                </div>
+                <div class="footer-first-img">
+                    <div class="img-container">
+                <img src="./images/warranty.png" alt="" width="30">
+                </div>
+                <div class="footer-content">
+                <h4>Warranty Protection </h4>
+                <p>Over 2 Years</p>
+                </div>
+                </div>
+                <div class="footer-first-img">
+                    <div class="img-container">
+                <img src="./images/free-shipping.png" alt="" width="30">
+                </div>
+                <div class="footer-content">
+                <h4>Free Shipping </h4>
+                <p>Order Over 150$</p>
+                </div>
+                </div>
+                <div class="footer-first-img">
+                    <div class="img-container">
+                <img src="./images/call-center.png" alt="" width="30">
+                </div>
+                <div class="footer-content">
+                <h4>24/7 Support</h4>
+                <p>Dedicated Support</p>
+                </div>
+                </div>
+                </div>
+            </footer>
+
+
+
+
+             <!-- Modal Structure -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Checkout Successful!</h2>
+            <p>Thank you for your purchase. Your order has been placed successfully.</p>
+        </div>
+    </div>
+        <script src="./script.js"></script>    
+</body>
+</html>
